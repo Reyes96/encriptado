@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+</style>
+
+</head>
+
+<body>
+    <main>
+        <section class="left">
+            <div class="text" id="text">
+                <p>Aqui apareceran tus mensajes encriptados y desencriptados...</p>
+            </div>
+
+            <div class="entrada">
+                <div id="alertas">
+
+                </div>
+                <form action="">
+                    <input placeholder="Ingresa aqui el mensaje" id="mensaje" class="mensaje" name="mensaje" type="text">
+                </form>
+            </div>
+
+            <div class="button-container">
+                <button id="enc" class="botones">Encriptar</button>
+                <button id="denc" class="botones">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <aside class="historial">
+            <div id="mensajes" class="mensajes">
+
+                <p id="info">Aqui apareceran los mensajes que hayas encriptado... <br><br> Haz clic en el mensaje para copiarlo </p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+    <p class="copyright">© 2023 Reyes Cazares.</p> <img src="Logo.png" alt="">
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

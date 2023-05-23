@@ -1,0 +1,246 @@
+html {
+    padding: 0px;
+}
+.encabezado{
+    width: 100%;
+}
+body {
+    background-color: #222222;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+img{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+.left {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.text {
+    width: 90%;
+    margin: auto;
+    height: 22rem;
+    padding: 2%;
+    background-color: #313131;
+    border-radius: 15px;
+    overflow: scroll;
+}
+.text::-webkit-scrollbar{
+    width: 3px;
+    height: 0px;
+} 
+.text::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+}
+
+.p{
+    inline-size: 800px;
+    overflow-wrap: break-word;
+}
+.typing {
+    width: 22ch;
+    animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  } 
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.entrada {
+    padding: 2%;
+}
+
+.mensaje {
+    background-color: #313131;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 98%;
+    height: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    font-family: 'Quicksand', sans-serif;
+}
+.mensaje::placeholder{
+    color:white;
+    font-weight: 300;
+}
+
+.historial {
+    margin-right:5%;
+    height: 32rem;
+    background-color: #313131;
+    border-radius: 20px;
+    width: 20%;
+    padding: 5px;
+}
+
+.mensajes {
+    height: 97%;
+    overflow: scroll;
+    padding: 5px;
+}
+
+.mensajes::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+
+.mensajes::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+}
+.encriptaciones {
+    /* width:200px; */
+    width: 88%;
+    height: 90px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    overflow: scroll;
+    inline-size: 88%;
+    overflow-wrap: break-word;
+    transition: 0.5s;
+    color: white;
+    text-align: left;
+}
+.encriptaciones:hover{
+    scale: 0.9;
+    border:solid 1px #ffd100;
+    cursor: pointer;
+}
+.selected{
+    border:solid 2px #ffd100;
+    border-radius: 20px;
+}
+.encriptaciones::-webkit-scrollbar{
+    width: 3px;
+    height: 0px;
+} 
+.encriptaciones::-webkit-scrollbar-thumb {
+    background: #A1A1A1;
+    border-radius: 4px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.botones {
+    background-color: #ffd100;
+    font-weight: 900;
+    color: black;
+    border-radius: 15px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 12px;
+    transition: 0.5s;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.alertas{
+    background-color: #8A0808;
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.botones:hover {
+    background-color: #222222;
+    color: #ffd100;
+    cursor: pointer;
+    border: solid 1px #ffd100;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    width: 73%;
+    text-align: center;
+}
+
+@media(max-width:480px){
+    .p{
+        inline-size: 200px;
+        overflow-wrap: break-word;
+    }
+    .historial{
+        width: 40%;
+        height: 28.5rem;
+        margin-right: 1%;
+        margin-left: 5px;
+    }
+    .button-container{
+        width: 100%;
+    }
+    .alertas{
+        width: 200px;
+        font-size: 13px;
+    }
+    .botones{
+        width: 100%;
+        padding: 10px;
+    }
+    .mensaje{
+        width: 90%;
+    }
+    .encriptaciones{
+        width: 100px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size:11px;
+        inline-size: 100px;
+        overflow-wrap: break-word;
+    }
+    footer {
+    position:relative;
+    margin-bottom: 2%;
+    }
+    .me{
+        margin-bottom: 5%;
+    }
+    #info{
+        font-size: 13px;
+    }
+}
